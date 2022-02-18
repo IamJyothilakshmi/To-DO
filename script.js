@@ -13,20 +13,24 @@
              var response = JSON.parse(this.responseText);
              var Jlist=response.list;
              console.log(Jlist);
+             
+    
              var output = "";
+             var list="list.json";
+             console.log(list);
                 for(var i=0;i<response.length;i++){
                 //  for(var i=0;i<Jlist.length;i++){
-                    //  output += '<li>'+ '<input  type="checkbox"   >' + response[i].title +'</li>';
+                      output += '<li>'+ '<input checked type="checkbox"   >' + response[i].title +'</li>'
                   // output += "<li>"+ "<input type=checkbox>" + Jlist[i].title + "</li>" ;
                 //  if(response. check. completed==false){
                   
                 //   output += '<li>'+ '<input  type="checkbox"   >' + response[i].title +'</li>';
                 // }
-                    if (response.check.completed==true);{
-                    output += '<li>'+ '<input checked type="checkbox"   >' + response[i].title +'</li>';
+                     if (list.completed<=false);{
+                   code1=  output += '<li>'+ '<input checked type="checkbox"  value="true" >' + response[i].title +'</li>';
                    
-                   }
-               }
+                    }
+                }
            
              console.log("output");
    document.getElementById("head").innerHTML=output;
