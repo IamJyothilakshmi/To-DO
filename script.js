@@ -18,11 +18,11 @@
                 //  for(var i=0;i<Jlist.length;i++){
                     //  output += '<li>'+ '<input  type="checkbox"   >' + response[i].title +'</li>';
                   // output += "<li>"+ "<input type=checkbox>" + Jlist[i].title + "</li>" ;
-                 if(response[i].completed==false){
+                //  if(response. check. completed==false){
                   
-                  output += '<li>'+ '<input  type="checkbox"   >' + response[i].title +'</li>';
-                }
-                    else (response[i].completed==true);{
+                //   output += '<li>'+ '<input  type="checkbox"   >' + response[i].title +'</li>';
+                // }
+                    if (response.check.completed==true);{
                     output += '<li>'+ '<input checked type="checkbox"   >' + response[i].title +'</li>';
                    
                    }
