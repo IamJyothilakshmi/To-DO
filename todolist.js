@@ -1,4 +1,4 @@
-function ajax(){
+
 var element, note, done;
 var copy = [];
 var t=0,
@@ -34,15 +34,52 @@ else{
     $("#list").append($('<div/>',{
         class:"colour"
     })
+    .append(
+        $(document.createElement("input")).attr({
+            id:"notDone",
+            name:"myCheckbox",
+            type:"checkbox",
+            onchange:"checkfn(this);"
+        })
     )
+    
     .append("<label id='todo'>" + note + "</label>")
-    .append("<br>");
+    .append("<br>"));
 }
              
          }
-         $("#tot").html("Total number of tasks: " +t);
-         $("#ctot").html("Total number of tasks completed: " +ct);
-         $("#nctot").html("Total number of tasks to be completed: " +nct);
+         $("#tot").html("Total number of tasks: ${t}");
+         $("#ctot").html("Total number of tasks completed: ${ct}");
+         $("#nctot").html("Total number of tasks to be completed: ${nct}");
      });
  });
+ var a =0;
+ var b=200;
+ var c=90;
+ var d=110;
+ function checkfn(v){
+     if (v.checked){
+         a++;
+         c++;
+         d--;
+     }
+     else{
+         a--;
+         b--;
+         d++;
+     }
+     var p = new Promise(function(resolve,reject){
+         if(a==5){
+             resolve();
+         }
+         else{
+             reject(a);
+         }
+     });
+     p.then(function(){
+         alert("Congratulations You have completed five Tasks!!")
+    //  }).catch(function(a){
+    //     //  alert("Complete your daily tasks")
+    //  });
+ })
 }
