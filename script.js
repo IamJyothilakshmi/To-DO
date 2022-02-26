@@ -52,7 +52,7 @@
                 p.then(function(){
                     alert("Congratulations You have completed five Tasks!!")
                 }).catch(function(a){
-                     alert("Complete your daily tasks")
+                    //  alert("Complete your daily tasks")
                  });
                      
                    

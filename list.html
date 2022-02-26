@@ -10,31 +10,31 @@
     <link rel="stylesheet" href="/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 </head>
+
 <body  background="./CSS/Pictures/gettyimages-871342582-612x612.jpg" >
+      <div class="container">
+      <div class="row">
       <div class="output"></div>
 <!-- <form action="https://jsonplaceholder.typicode.com/todos" onsubmit="return ajax()"></form> -->
-   <div id="demo">
-
-   </div>
+ 
     
-    
+    <div class="col-6"> <a href="#" onclick="ajax();" >To Do List</a></div><br>
+    <div class="col-6"> <a href="index.html">LogOut</a></div>
                 
             <div id="head">
                 
-                   <a href="#" onclick="ajax();" >To Do List</a>     
+                  <!-- <div class="col-6">   <a href="#" onclick="ajax();" >To Do List</a>  </div>    -->
                  
               
-                <a href="index.html">LogOut</a>
+                  <!-- <div class="col-6">   <a href="index.html">LogOut</a></div> -->
                 <input type="checkbox" id="check" hidden>
                    <!-- <button onclick="ajax();">See the list</button>    -->
             </div> 
-          <p id="tot"></p>
-          <p id="ctot"></p>
-          <p id="nctot"></p>
+        
         
     </div>
  </div> 
- <label for="error" id="error"></label>
+ 
  <script src="./jquery.min.js">
   
  </script>
@@ -50,6 +50,7 @@
  
 
       </script> 
-      
+      </div>
 </body>
+
 </html>
