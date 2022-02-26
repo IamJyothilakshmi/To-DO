@@ -30,6 +30,9 @@
   padding-top: 10%;
   padding-left: 30%; 
 }
+#login{
+  background-color: blue;
+}
 #alarm{
   float: right;
   width: 100%;
@@ -65,6 +68,8 @@ h1{
 }
 #submit{
   margin-left: 30%;
+  
+
 
 }
 .row a{
@@ -87,7 +92,7 @@ h1{
   height: 50%;
   font-size: 150%;
 }
-.head a:hover{
+.row a:hover{
   background: whitesmoke;
   color: black;
   transition: 8s ease-in-out;
