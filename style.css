@@ -76,7 +76,7 @@ h1{
 }
 .row a{
   font-family: 'Lucida Sans' ;
-  width: 50px;
+  width: 50%;
   height: 80px;
   font-size: 20px;
   text-decoration: none;
@@ -104,16 +104,17 @@ h1{
  .container{
    margin-top: 6%;
    margin-right: 2%;
+   padding-left: 25px;
  }
 
 
- .col-md-6{
+ /* .col-6{ */
    /* width: 80%; */
-  border: 2px solid greenyellow;
+  /* border: 2px solid skyblue; */
   /* margin-top:50% ; */
   /* padding: 8px;  */
      /* margin-right: .0002em;  */
      /* padding-top: 20px; */
      
-} 
+/* }  */
  
