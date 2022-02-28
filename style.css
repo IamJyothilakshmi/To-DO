@@ -16,9 +16,11 @@
  }
  body a{
     padding-top: 90%; 
-    padding-left: 50%; 
+      padding-left: 50%;  
+     text-align: center; 
    font-size: xx-large;
    text-decoration: none;
+   color: blue;
  }
  body h1{
    padding-top: 5%;
